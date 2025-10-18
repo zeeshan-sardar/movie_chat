@@ -1,15 +1,15 @@
-# # Movie Chat
+# Chat Bot
 
 ![Tests](https://github.com/zeeshan-sardar/movie_chat/actions/workflows/tests.yml/badge.svg)
 
-**Movie Chat** is a simple conversational movie assistant built with **Flask**, **Streamlit**, and **OpenAI GPT**.  
+**Chat Bot** is a simple conversational movie assistant built with **Flask**, **Streamlit**, and **OpenAI GPT**.  
 It allows users to explore and discover movies by asking natural language questions instead of using filters or forms.
 
 ---
 
 ## Overview
 
-Movie Chat lets you search and talk about movies conversationally.  
+Chat Bot lets you search and talk about movies conversationally.  
 For example, you can ask:
 
 > “Show me top-rated action movies after 2015.”  
@@ -21,7 +21,6 @@ The frontend (Streamlit) provides a simple chat interface that remembers your co
 
 This project demonstrates how large language models can be integrated with structured databases to provide smart, contextual, and human-like interactions.  
 It is lightweight, modular, and designed for quick experimentation or educational use.
-
 
 ---
 
@@ -128,4 +127,4 @@ pytest -v
 
 
 ## Demo
-![Alt text](./figures/demo.gif)
+![Alt text](./media/demo.gif)
