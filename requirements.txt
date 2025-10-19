@@ -1,0 +1,16 @@
+# openai>=1.40.0
+# Flask==3.0.3
+# Flask-Cors==4.0.0
+# streamlit==1.38.0
+# requests==2.32.3
+# SQLAlchemy==2.0.36
+# openai>=1.40.0
+
+
+flask
+flask-cors
+sqlalchemy
+openai
+requests
+pytest
+pytest-cov
