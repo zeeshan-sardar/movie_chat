@@ -31,11 +31,13 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pip-
       - name: Install dependencies
+        shell: bash
         run: |
           python -m pip install --upgrade pip
-          if [ -f requirements.txt ]; then
+          if [[ -f requirements.txt ]]; then
             pip install -r requirements.txt
           else
-            pip install flask flask-cors sqlalchemy openai requests pytest
+            pip install flask flask-cors sqlalchemy openai requests pytest pytest-cov
+          fi
       - name: Run tests
         run: pytest -q
