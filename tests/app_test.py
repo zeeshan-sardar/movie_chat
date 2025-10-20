@@ -1,13 +1,13 @@
 # tests/test_app_basic.py
 import json
 import pytest
+import sys, os
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, scoped_session
 
-import sys, os
 # Ensure project root (where app.py lives) is on path
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
-import app as appmod  # your app.py
+import app as appmod 
 
 
 # ---------- Fixtures: test app + isolated DB + mocked OpenAI ----------
