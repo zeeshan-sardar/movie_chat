@@ -128,4 +128,4 @@ for _, row in df.iterrows():
 conn.commit()
 conn.close()
 
-print("✅ Data successfully saved to ./db/movies.db")
+print("Data successfully saved to ./db/movies.db")

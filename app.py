@@ -35,7 +35,7 @@ OPENAI_MODEL_REPLY = os.getenv("OPENAI_MODEL_REPLY", "gpt-4o-mini")
 OPENAI_TIMEOUT = int(os.getenv("OPENAI_TIMEOUT", "20"))          # seconds
 OPENAI_MAX_RETRIES = int(os.getenv("OPENAI_MAX_RETRIES", "2"))   # retries (total attempts = 1 + retries)
 
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY", "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"))
 
 # ----------------------------
 # SQLAlchemy setup
@@ -150,7 +150,7 @@ def get_history(db, conversation_id):
 
 
 # ----------------------------
-# LLM: simplified, safe wrappers
+# LLM: Wrappers
 # ----------------------------
 def _chat_with_retries(model, messages, response_format=None, temperature=0.0,
                        retries=OPENAI_MAX_RETRIES, timeout=OPENAI_TIMEOUT):

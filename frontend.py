@@ -28,7 +28,7 @@ with st.sidebar:
     if st.button("🧹 New chat"):
         st.session_state.conversation_id = None
         st.session_state.messages = []
-        st.experimental_rerun()
+        st.rerun()
 
 # ----------------------------
 # Render history
@@ -40,7 +40,7 @@ for m in st.session_state.messages:
 # ----------------------------
 # Chat input
 # ----------------------------
-prompt = st.chat_input("Type your question (e.g., “top 5 sci-fi movies after 2015”)")
+prompt = st.chat_input("Type your question (e.g., “top 5 action movies after 2015”)")
 if prompt:
     # Show user message immediately
     st.session_state.messages.append({"role": "user", "content": prompt})
