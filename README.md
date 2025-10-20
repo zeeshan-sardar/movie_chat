@@ -47,12 +47,14 @@ Below is the high-level architecture diagram showing how all components interact
 - **Database:** SQLite  
 - **Testing:** Pytest  
 - **CI/CD:** GitHub Actions  
+- **Language:** Python 3.12+
 
+
+---
 ## Setup Instructions
-
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/movie_chat.git
+git clone https://github.com/zeeshan-sardar/movie_chat.git
 cd movie_chat
 ```
 
@@ -94,7 +96,6 @@ streamlit run frontend.py
 Once both are running, open the Streamlit link shown in the terminal (usually http://localhost:8501).
 
 ---
-
 ## API Endpoints
 
 | Endpoint | Method | Description |
